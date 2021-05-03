@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    team: myteam
+  name: aivia-topic-mapping
+  namespace: myteam
+data:
+  topic_mapping.properties: |
+    aapen-data-v2 = myteam.data-v2
+    privat-hemmelig-saa-det-saa = myteam.hemmelig-v2
