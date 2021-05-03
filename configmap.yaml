@@ -7,5 +7,4 @@ metadata:
   namespace: myteam
 data:
   topic_mapping.properties: |
-    aapen-data-v2 = myteam.data-v2
-    privat-hemmelig-saa-det-saa = myteam.hemmelig-v2
+    teampam.pam-stilling-stilling-ekstern = todo.kø

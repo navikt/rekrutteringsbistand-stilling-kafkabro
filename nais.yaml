@@ -1,10 +1,10 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: aivia
-  namespace: myteam
+  name: rekrutteringsbistand-stilling-kafkabro
+  namespace: arbeidsgiver
   labels:
-    team: myteam
+    team: arbeidsgiver
 spec:
   image: ghcr.io/nais/aivia:latest
   liveness:
@@ -25,7 +25,7 @@ spec:
     cpu: "200m"
     memory: "256Mi"
   envFrom:
-    - secret: aivia-kafka-on-prem
+    - secret: rekrutteringsbistand-stilling-kafkabro-todo
   filesFrom:
     - configmap: aivia-topic-mapping
   kafka:

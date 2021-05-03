@@ -2,15 +2,15 @@ name: "Deploy aivia"
 on:
   push:
     branches:
-      - "main"t
-jobs:
-  deploy:
-    name: "Deploy AiviA"
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "actions/checkout@v2"
-      - uses: nais/deploy/actions/deploy@v1
-        env:
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-gcp
-          RESOURCE: configmap.yaml,nais.yaml
+      - "main"
+#jobs:
+#  deploy:
+#    name: "Deploy AiviA"
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: "actions/checkout@v2"
+#      - uses: nais/deploy/actions/deploy@v1
+#       env:
+#          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+#         CLUSTER: dev-gcp
+#         RESOURCE: configmap.yaml,nais.yaml
