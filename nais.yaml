@@ -26,7 +26,10 @@ spec:
     memory: "256Mi"
   envFrom:
     - secret: rekrutteringsbistand-stilling-kafkabro-todo
+  env:
+    - name: AIVIA_SOURCE
+      value: aiven
   filesFrom:
-    - configmap: aivia-topic-mapping
+    - configmap: rekrutteringsbistand-stilling-kafkabro-topic-mapping
   kafka:
     pool: nav-dev

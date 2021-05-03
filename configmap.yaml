@@ -2,9 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
-    team: myteam
-  name: aivia-topic-mapping
-  namespace: myteam
+    team: arbeidsgiver
+  name: rekrutteringsbistand-stilling-kafkabro-topic-mapping
+  namespace: arbeidsgiver
 data:
   topic_mapping.properties: |
     teampam.pam-stilling-stilling-ekstern = todo.kø
