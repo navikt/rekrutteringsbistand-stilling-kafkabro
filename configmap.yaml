@@ -7,4 +7,4 @@ metadata:
   namespace: arbeidsgiver
 data:
   topic_mapping.properties: |
-    teampam.pam-stilling-stilling-ekstern = todo.kø
+    teampam.pam-stilling-stilling-ekstern = rekruteringsbistand-stilling
