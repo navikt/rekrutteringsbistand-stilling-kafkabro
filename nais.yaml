@@ -24,8 +24,8 @@ spec:
   requests:
     cpu: "200m"
     memory: "256Mi"
-    envFrom:
-      - secret: rekrutteringsbistand-stilling-kafkabro-todo
+#    envFrom:
+#      - secret: rekrutteringsbistand-stilling-kafkabro-todo
   env:
     - name: AIVIA_SOURCE
       value: aiven
