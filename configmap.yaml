@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   labels:
     team: arbeidsgiver
-  name: rekrutteringsbistand-stilling-kafkabro-topic-mapping
+  name: aivia-topic-mapping
   namespace: arbeidsgiver
 data:
   topic_mapping.properties: |
