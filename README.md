@@ -1,6 +1,11 @@
 # rekrutteringsbistand-stilling-kafkabro
 Kopiering av stillingsdata fra Arbeidsplassens Kafka-topic med kort retention til team Inkludering sin Kafka-topic med lang retention
 
+# Lese meldinger på nytt til en "ren" topic
+* Lag en ny topic som vi kan skrive til. Den har samme navn som forrige topic, men inkrementert med 1
+* Eksisterende topic er referert i configmap.yaml, denne endrer vi til å referere til nytt topic navn.
+* For å tilbakerulle offset, setter vi nytt navn i miljøvariabelen NAIS_CLIENT_ID i nais.yaml. Navnet kan inkrementeres med 1.
+
 # Henvendelser
 
 ## For Nav-ansatte
