@@ -1,0 +1,25 @@
+apiVersion: kafka.nais.io/v1
+kind: Topic
+metadata:
+  name: rekrutteringsbistand-stilling-1
+  namespace: arbeidsgiver
+  labels:
+    team: arbeidsgiver
+  annotations:
+    kafka.nais.io/removeDataWhenResourceIsDeleted: "true"
+spec:
+  pool: nav-prod
+  config: # optional; all fields are optional too
+    cleanupPolicy: compact,delete
+    minimumInSyncReplicas: 1
+    partitions: 1
+    replication: 3
+    retentionBytes: -1 # -1 means unlimited
+    retentionHours: 43850 # 43850 = 5 år inkl. ev. skuddår
+  acl:
+    - team: arbeidsgiver
+      application: rekrutteringsbistand-stilling-indekser
+      access: read # read, write, readwrite
+    - team: arbeidsgiver
+      application: rekrutteringsbistand-stilling-kafkabro
+      access: readwrite
