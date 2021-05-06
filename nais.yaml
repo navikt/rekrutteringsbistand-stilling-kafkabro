@@ -34,4 +34,4 @@ spec:
   filesFrom:
     - configmap: aivia-topic-mapping
   kafka:
-    pool: nav-dev
+    pool: {{kafka_pool}}
