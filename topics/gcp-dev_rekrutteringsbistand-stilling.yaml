@@ -26,3 +26,6 @@ spec:
     - team: arbeidsgiver
       application: rekrutteringsbistand-stilling-api
       access: read
+    - team: arbeidsgiver-inkludering
+      application: arbeidsgiver-inkludering-kafkamanager
+      access: read
