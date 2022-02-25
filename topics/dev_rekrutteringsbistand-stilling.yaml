@@ -17,7 +17,7 @@ spec:
     retentionBytes: -1 # -1 means unlimited
     retentionHours: 43850 # 43850 = 5 år inkl. ev. skuddår
   acl:
-    - team: arbeidsgiver
+    - team: toi
       application: rekrutteringsbistand-stilling-indekser
       access: read # read, write, readwrite
     - team: arbeidsgiver
