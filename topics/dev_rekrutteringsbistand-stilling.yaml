@@ -29,3 +29,6 @@ spec:
     - team: arbeidsgiver-inkludering
       application: arbeidsgiver-inkludering-kafkamanager
       access: read
+    - team: team-ai
+      application: ai-nlp-trainer
+      access: read
