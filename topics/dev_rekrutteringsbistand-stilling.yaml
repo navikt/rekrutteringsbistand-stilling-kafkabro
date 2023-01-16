@@ -23,9 +23,6 @@ spec:
     - team: arbeidsgiver
       application: rekrutteringsbistand-stilling-kafkabro
       access: readwrite
-    - team: arbeidsgiver
-      application: rekrutteringsbistand-stilling-api
-      access: read
     - team: toi
       application: toi-kafkamanager
       access: read
