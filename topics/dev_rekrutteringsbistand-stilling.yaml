@@ -2,9 +2,9 @@ apiVersion: kafka.nais.io/v1
 kind: Topic
 metadata:
   name: rekrutteringsbistand-stilling-1
-  namespace: arbeidsgiver
+  namespace: toi
   labels:
-    team: arbeidsgiver
+    team: toi
   annotations:
     kafka.nais.io/removeDataWhenResourceIsDeleted: "true"
 spec:
@@ -20,7 +20,7 @@ spec:
     - team: toi
       application: rekrutteringsbistand-stilling-indekser
       access: read # read, write, readwrite
-    - team: arbeidsgiver
+    - team: toi
       application: rekrutteringsbistand-stilling-kafkabro
       access: readwrite
     - team: toi

@@ -2,9 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
-    team: arbeidsgiver
+    team: toi
   name: aivia-topic-mapping
-  namespace: arbeidsgiver
+  namespace: toi
 data: # Vi inkrementerer rekrutteringsbistand-stilling-1 når vi vil ha en ny "ren" topic.
   topic_mapping.properties: |
-    teampam.stilling-ekstern-1 = arbeidsgiver.rekrutteringsbistand-stilling-1
+    teampam.stilling-ekstern-1 = toi.rekrutteringsbistand-stilling-1
