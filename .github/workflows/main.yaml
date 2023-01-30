@@ -4,7 +4,7 @@ on: [push]
 jobs:
   deploy-to-dev:
     name: Deploy to dev
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/deploy-med-prodconfig'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/bytt-namespace-og-teamnavn-til-toi'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
