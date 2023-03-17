@@ -29,6 +29,8 @@ spec:
       value: aiven
     - name: NAIS_CLIENT_ID
       value: kafka-stilling-1 #Vi inkrementerer denne verdien når vi vil lese alt på topic fra starten av (nullstille offset)
+    - name: LOG_FORMAT
+      value: logstash
   filesFrom:
     - configmap: aivia-topic-mapping
   kafka:
