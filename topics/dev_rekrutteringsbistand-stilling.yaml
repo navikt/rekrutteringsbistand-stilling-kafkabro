@@ -26,9 +26,6 @@ spec:
     - team: toi
       application: toi-kafkamanager
       access: read
-    - team: team-ai
-      application: ai-nlp-trainer
-      access: read
     - team: toi
       application: rekrutteringsbistand-stilling-api
       access: read
