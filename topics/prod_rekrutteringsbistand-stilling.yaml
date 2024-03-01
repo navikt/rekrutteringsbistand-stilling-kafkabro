@@ -23,9 +23,6 @@ spec:
     - team: toi
       application: rekrutteringsbistand-stilling-kafkabro
       access: readwrite
-    - team: team-ai
-      application: ai-nlp-trainer
-      access: read
     - team: toi
       application: rekrutteringsbistand-stilling-api
       access: read
