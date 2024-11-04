@@ -6,7 +6,7 @@ metadata:
   labels:
     team: toi
 spec:
-  image: ghcr.io/nais/aivia:latest
+  image: europe-north1-docker.pkg.dev/nais-io/nais/images/aivia:latest
   liveness:
     path: "/internal/isalive"
   readiness:
