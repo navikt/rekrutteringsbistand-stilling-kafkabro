@@ -38,3 +38,9 @@ spec:
     - configmap: aivia-topic-mapping
   kafka:
     pool: {{kafka_pool}}
+  observability:
+    logging:
+      destinations:
+        - id: loki
+        - id: elastic
+      enabled: true
