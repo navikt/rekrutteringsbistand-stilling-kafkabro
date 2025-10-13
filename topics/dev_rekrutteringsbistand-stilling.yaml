@@ -18,9 +18,6 @@ spec:
     retentionHours: 43850 # 43850 = 5 år inkl. ev. skuddår
   acl:
     - team: toi
-      application: rekrutteringsbistand-stilling-indekser
-      access: read # read, write, readwrite
-    - team: toi
       application: rekrutteringsbistand-stilling-kafkabro
       access: readwrite
     - team: toi

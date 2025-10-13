@@ -4,7 +4,7 @@ on: [ push ]
 jobs:
   deploy-to-dev:
     name: Deploy to dev
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/alerts'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/alerts' || github.ref == 'refs/heads/fjern_stilling_indekser'
     permissions:
       id-token: write
     runs-on: ubuntu-latest
