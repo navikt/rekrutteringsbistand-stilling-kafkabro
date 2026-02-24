@@ -1,10 +1,10 @@
 name: "Deploy aivia"
-on: [ push ]
+on: [ push, workflow_dispatch ]
 
 jobs:
   deploy-to-dev:
     name: Deploy to dev
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/alerts' || github.ref == 'refs/heads/fjern_stilling_indekser'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/alerts' || github.ref == 'refs/heads/workflow-dispatch'
     permissions:
       id-token: write
     runs-on: ubuntu-latest
