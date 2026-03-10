@@ -11,7 +11,6 @@ spec:
   pool: nav-prod
   config: # optional; all fields are optional too
     cleanupPolicy: compact,delete
-    minimumInSyncReplicas: 1
     partitions: 1
     replication: 3
     retentionBytes: -1 # -1 means unlimited
