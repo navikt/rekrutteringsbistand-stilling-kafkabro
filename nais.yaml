@@ -16,17 +16,15 @@ spec:
   replicas:
     min: 1
     max: 1
-    cpuThresholdPercentage: 50
   prometheus:
     enabled: true
     path: "/internal/prometheus"
   resources:
     requests:
-      cpu: "200m"
-      memory: "256Mi"
+      cpu: 25m
+      memory: 192Mi
     limits:
-      cpu: "200m"
-      memory: "256Mi"
+      memory: 384Mi
   env:
     - name: AIVIA_SOURCE
       value: aiven
