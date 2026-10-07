@@ -14,7 +14,7 @@ jobs:
         env:
           CLUSTER: dev-gcp
           VARS: nais-vars-dev.yaml
-          RESOURCE: configmap.yaml,nais.yaml,topics/dev_rekrutteringsbistand-stilling.yaml
+          RESOURCE: topics/dev_rekrutteringsbistand-stilling.yaml
 
   deploy-to-prod:
     name: Deploy to prod
@@ -29,4 +29,4 @@ jobs:
         env:
           CLUSTER: prod-gcp
           VARS: nais-vars-prod.yaml
-          RESOURCE: configmap.yaml,nais.yaml,topics/prod_rekrutteringsbistand-stilling.yaml,alerts.yaml
+          RESOURCE: topics/prod_rekrutteringsbistand-stilling.yaml

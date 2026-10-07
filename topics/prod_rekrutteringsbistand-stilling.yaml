@@ -19,9 +19,3 @@ spec:
     - team: toi
       application: rekrutteringsbistand-stilling-kafkabro
       access: readwrite
-    - team: toi
-      application: rekrutteringsbistand-stilling-api
-      access: read
-    - team: toi
-      application: toi-stilling-indekser
-      access: read
